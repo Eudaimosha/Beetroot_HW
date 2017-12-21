@@ -58,6 +58,7 @@ body{
     border: 2px solid #ccc;
     text-align: center;
     padding-top: 20px;
+    opacity: .6;
 }
 
 .city{
@@ -95,13 +96,11 @@ body{
 .green {background-color: #339966;}
 .purple {background-color: #666699;}
 
- .cities:hover {
-    opacity: .6;
+ .item:hover {
+    opacity: 1;
  }
 
- /*div.cities:hover {  Не меняет прозрачности ((( WTF
-    opacity: 1;
- }*/
+ 
 
 
 /*last phrase*/
