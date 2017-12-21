@@ -1,0 +1,118 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	transition: all .2s ease;
+}
+
+body {
+background: #F1F1F1;
+}
+
+main {
+    margin-left: 112px;
+    margin-right: 112px;
+}
+
+.top {
+width: 100%;
+margin-top: 50px;
+vertical-align: middle;
+white-space: nowrap;
+}
+
+::-webkit-input-placeholder { color: #C2C2C2;}
+::-moz-input-placeholder {color: #c2c2c2;}
+::-ms-input-placeholder {color: #c2c2c2;}
+
+.top input#search {
+    width: 80%;
+    height: 85px;
+    background: #F1F1F1;
+    border: none;
+    font-size: 85px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    float: left;
+    color: #ec5a62;
+    padding-left: 15px;
+    margin-bottom: 60px;  
+}    
+
+placeholder{
+    color: #c2c2c2;
+}
+
+.icon {
+    width: 20%;
+    height: 50px;
+    border: 0;
+    cursor: pointer;
+    -webkit-background-size: contain;
+    background-size: contain;
+    opacity: .4;
+    background: #F1F1F1;
+    
+}
+
+/* main content */
+
+.content {   /*блок со всеми названиями и списками из ссылок*/
+    font-family: Geneva, sans-serif;
+    color:#C2C2C2;
+    font-weight: bold;   
+}
+
+.item {  /*каждый список с названием*/
+    display: inline-block;
+    
+}
+
+.popular { /*список по центру*/
+    padding-left: 40px;
+    padding-right: 40px;
+  
+}
+
+ul { /*список*/
+    list-style: none;
+    width: 260px;
+    height:365px;
+    border: 2px solid #F1F1F1;
+    font-size:11px;
+    padding: 15px;
+    margin: 5px;
+    font-weight: bold;
+     
+    
+}
+
+ul span{ /*текст в блоке с ссылкой*/
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -15%;
+    margin-left: 5%;
+    width: 200px;
+}
+
+li {
+    background:rgba(118,117,128,0.05);
+    border: 2px solid #F1F1F1;
+}
+
+
+li:hover{
+    background: rgba(118,117,128,0.1);
+    color: #ec5a62;
+}
+
+.avatar .picture {
+    width: 40px;
+}
+
+.avatar{
+    border-radius: 50%;
+}

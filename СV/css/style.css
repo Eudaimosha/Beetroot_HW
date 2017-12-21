@@ -1,0 +1,37 @@
+h1 {
+    font-style: italic;
+    font-weight: 900;
+}
+
+.leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 10px 100px 10px 20px; /* Отступы вокруг картинки */
+    height:180px
+}
+
+header {
+    height: 240px;
+    background: rgb(230, 216, 230);
+    border: solid 1px black;
+}
+
+.socseti {
+    left: 270px;
+    padding: 6px 0px 0px 6px;
+    position: absolute;
+    top: 160px;
+}
+
+main {
+    border: solid 1px black;  
+}
+
+.job {
+margin:20px;
+}
+
+h2 {
+    background: rgb(230, 216, 230);
+    font-style: italic;
+}
+
