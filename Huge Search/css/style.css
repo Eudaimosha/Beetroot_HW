@@ -61,14 +61,12 @@ placeholder{
     color:#C2C2C2;
     font-weight: bold;
     width: 100%;
-     
+    margin-bottom: 150px;     
 }
 
 .item {  /*каждый список с названием*/
     display: inline-block;
     width: 30%;
-    /*overflow: hidden;*/
-
 }
 
 .popular { /*список по центру*/
@@ -81,7 +79,7 @@ ul { /*список*/
     height:365px;
     border: 2px solid #F1F1F1;
     font-size:12px;
-    margin: 5px;
+    margin-top: 20px;
     font-weight: bold;
       
 }
@@ -90,7 +88,6 @@ ul span{ /*текст в блоке с ссылкой*/
     line-height: 60px;
    margin-left: 10%; 
    vertical-align: middle;
-  /* overflow: hidden; */
 }
 
 li {
