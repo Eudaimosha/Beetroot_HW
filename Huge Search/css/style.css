@@ -5,7 +5,6 @@
 	padding: 0;
 	margin: 0;
 	outline: none;
-	transition: all .2s ease;
 }
 
 body {
@@ -19,9 +18,8 @@ main {
 
 .top {
 width: 100%;
-margin-top: 50px;
-vertical-align: middle;
-white-space: nowrap;
+margin: 50px auto;
+display: inline-block;
 }
 
 ::-webkit-input-placeholder { color: #C2C2C2;}
@@ -39,7 +37,6 @@ white-space: nowrap;
     float: left;
     color: #ec5a62;
     padding-left: 15px;
-    margin-bottom: 60px;  
 }    
 
 placeholder{
@@ -62,37 +59,38 @@ placeholder{
 .content {   /*блок со всеми названиями и списками из ссылок*/
     font-family: Geneva, sans-serif;
     color:#C2C2C2;
-    font-weight: bold;  
-    margin-bottom: 100px; 
+    font-weight: bold;
+    width: 100%;
+     
 }
 
 .item {  /*каждый список с названием*/
     display: inline-block;
-    vertical-align: bottom;
+    width: 30%;
+    /*overflow: hidden;*/
+
 }
 
 .popular { /*список по центру*/
-    padding-left: 40px;
-    padding-right: 40px;
-  
+    margin-left: 40px;
+    margin-right: 40px;  
 }
 
 ul { /*список*/
     list-style: none;
-    width: 260px;
     height:365px;
     border: 2px solid #F1F1F1;
-    font-size:11px;
+    font-size:12px;
     margin: 5px;
-    font-weight: bold;   
+    font-weight: bold;
+      
 }
 
 ul span{ /*текст в блоке с ссылкой*/
-    text-align: center;
-    margin-top: -15%;
-    margin-left: 10%;
-    width: 200px;
-    
+    line-height: 60px;
+   margin-left: 10%; 
+   vertical-align: middle;
+  /* overflow: hidden; */
 }
 
 li {
@@ -107,7 +105,8 @@ li:hover{
     color: #ec5a62;
 }
 
-.avatar.picture {
+.avatar,.picture {
+    margin: 10px;
     float: left;
 }
 
