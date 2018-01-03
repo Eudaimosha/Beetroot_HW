@@ -8,6 +8,7 @@
     transition: background .3s ease-in-out;
 }
 
+// @TODO: отступы - разные виды и типы и величины
 header{
     background-color: #4A4F56;
     text-align: center;

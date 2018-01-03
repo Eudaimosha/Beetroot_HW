@@ -11,7 +11,7 @@
 	font-style: normal;
 }
     
-
+// @TODO: отступы
 body {
     background-color: #454e52;
     font-family: Georgia, 'Times New Roman', Times, serif;    
@@ -31,6 +31,7 @@ body {
     margin: 50px 0 50px 60px;
 }
 
+// @TODO: не по БЭМу (у тебя сейчас не БЭМ, а БЭЭМ ))
 .main-title__wrapper__subtitle {
     opacity: 0.3;
     font-size: 15px;

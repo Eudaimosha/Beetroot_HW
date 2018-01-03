@@ -4,6 +4,7 @@ h1 {
 }
 
 .leftimg {
+    // @TODO: отступы
     float:left; /* Выравнивание по левому краю */
     margin: 10px 100px 10px 20px; /* Отступы вокруг картинки */
     height:180px

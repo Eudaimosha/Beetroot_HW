@@ -16,6 +16,7 @@ main {
     margin-right: 112px;
 }
 
+// @TODO: отступы
 .top {
 width: 100%;
 margin: 50px auto;
@@ -26,6 +27,7 @@ display: inline-block;
 ::-moz-input-placeholder {color: #c2c2c2;}
 ::-ms-input-placeholder {color: #c2c2c2;}
 
+// @TODO: дичь!!! вложенность  большая
 .top input#search {
     width: 80%;
     height: 85px;
