@@ -1,0 +1,46 @@
+h1 {
+  font-style: italic;
+  font-weight: 900;
+}
+
+.photo {
+  float:left; 
+  margin-left: 50px;
+  margin-right: 50px;
+  height:180px;
+  border: 1px solid black;
+}
+
+header {
+  min-height: 240px;
+  background: rgb(230, 216, 230);
+  padding-top: 15px;
+  line-height: 1;
+}
+
+.social-net {
+  left: 270px;
+  position: absolute;
+  top: 160px;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+.icon {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.h2-like { margin-left: 50px; }
+
+.subtitle { font-weight: bold; }
+
+.job {
+  margin:20px;
+}
+
+h2 {
+  padding-left: 50px;
+  background: rgb(230, 216, 230);
+  font-style: italic;
+}
+
