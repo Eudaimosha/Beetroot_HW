@@ -26,22 +26,12 @@
   font-style: normal;
 }
 
-.container-1 {
+.header__wrapper {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   margin: 20px 100px;
-}
-
-.container-1__title {
-  font-size: 48px;
-  font-weight: 800;
-  font-family: 'Roboto Bold';
-}
-
-.container-1__nav {
-  text-align: right;
-  flex-grow: 1;
 }
 
 .nav__link {
@@ -56,8 +46,6 @@
 .nav__button {
   border: none;
   background: none;
-  padding: 5px;
-  margin-top: 20px;
 }
 
 .nav__link:hover { color: #ff0000; }
@@ -65,32 +53,33 @@
 .nav__button:hover {
   cursor: pointer;
   border: 4px solid #ff0000;
+  padding: 5px;
 }
 
-.container-2 {
+.slider {
   display: flex;
   flex-direction: row;
   text-align: right;
   margin: 100px;
 }
 
-.container-2__wrapper {
+.slider__wrapper {
   width: 50%;
 }
 
-.container-2__title {
+.slider__title {
   font-family: 'Raleway Black';
   font-size: 150px;
   line-height: 1;
 }
 
-.container-2__text {
+.slider__text {
   font-family: 'Roboto Light';
   font-size: 24px;
   line-height: 1.5;
 }
 
-.container-2__subtitle {
+.slider__button {
   background: none;
   border: none;
   font-family: 'Roboto Bold';
@@ -99,12 +88,12 @@
   margin-top: 10px;
 }
 
-.container-2__subtitle:hover {
+.slider__button:hover {
   cursor: pointer;
   opacity: .5;
 }
 
-.container-2__img {
+.slider__photo {
   margin-left: 100px;
 }
 
@@ -114,7 +103,7 @@ footer {
   margin-top: -50px;
 }
 
-.footer__btn {
+.footer__button {
   background: none;
   border: 1px solid #000;
   background: #000;
@@ -124,7 +113,7 @@ footer {
   margin: 0 3px 100px 3px;
 }
 
-.footer__btn:hover {
+.footer__button:hover {
   cursor: pointer;
   background: #ff0000;
   border: 1px solid #ff0000;

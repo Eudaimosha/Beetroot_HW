@@ -1,0 +1,21 @@
+.board {
+  display: flex;
+  width: 42em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1em solid #f57927;
+  margin: 100px auto;
+  
+}
+
+.element__black {
+  width: 5em;
+  height: 5em;
+  background: #271908;
+  }
+.element__white {
+  width: 5em;
+  height: 5em;
+  background: #e7dbcb;
+  }

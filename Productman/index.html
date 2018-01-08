@@ -6,40 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Productman</title>
-  <link rel="stylesheet" href="./styles/resset.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <!-- @TODO: change name for container -->
-    <div class="container-1">
-      <div class="container-1__title">ProductMan</div>
-      <nav class="container-1__nav">
+    <div class="header__wrapper">
+      <div class="header__logo"><img src="./images/logo.png" alt="logo"></div>
+      <nav class="header__nav nav">
         <a class="nav__link" href="#recent">Recent Work</a>
         <a class="nav__link" href="#featured">Featured Product</a>
         <button class="nav__button">
-          <img src="./images/menu.png" alt="menu-icon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
       </nav>
     </div>
   </header>
   <main>
-    <div class="container-2">
-      <div class="container-2__wrapper">
-        <p class="container-2__title">BLACK& WHITE</p>
-        <p class="container-2__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+    <div class="slider">
+      <div class="slider__wrapper">
+        <p class="slider__title">BLACK& WHITE</p>
+        <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
           aliqua. Ut enim ad minim veniam</p>
-        <button class="container-2__subtitle">View Project</button>
+        <button class="slider__button">View Project</button>
       </div>
-      <img class="container-2__img" src="./images/image.jpg" alt="headphones">
+      <img class="slider__photo" src="./images/image.jpg" alt="headphones">
     </div>
   </main>
   <footer>
-    <button class="footer__btn"></button>
-    <button class="footer__btn"></button>
-    <button class="footer__btn"></button>
+    <button class="footer__button"></button>
+    <button class="footer__button"></button>
+    <button class="footer__button"></button>
   </footer>
 </body>
 
