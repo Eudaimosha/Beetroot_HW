@@ -26,6 +26,9 @@
   font-style: normal;
 }
 
+.body {
+  background: #eee;
+}
 .header__wrapper {
   display: flex;
   align-items: center;
