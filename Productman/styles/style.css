@@ -29,6 +29,7 @@
 .body {
   background: #eee;
 }
+
 .header__wrapper {
   display: flex;
   align-items: center;
@@ -42,7 +43,7 @@
   font-size: 18px;
   font-family: 'Roboto Regular';
   margin: 0 30px;
-  text-decoration: none;
+  text-decoration: none;  
   text-transform: capitalize;
 }
 
