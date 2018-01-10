@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Museo Sans Rounded-100';
+  src: url('./../fonts/MuseoSansRounded-100.woff') format('woff');
+  font-weight: heavy;
+  font-style: normal;
+}
+
+body {
+  background: url('./../images/background.png');
+}
+
+.slider {
+  background: #111a28;
+  font-family: 'Museo Sans Rounded-100';
+  min-height: 400px;
+  width: 700px;
+  margin: 110px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 50px #000;
+}
+
+.slider__logo {
+  padding: 20px;
+  color: #fff;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__photo {
+  padding: 40px;
+}
+
+.product__title {
+  font-size: 24px;
+}
+
+.product__subtitle {
+  font-size: 16px;
+  line-height: 2;
+  opacity: 0.6;
+}
+
+.product__rate {
+  margin: 20px 0;
+}
+
+.fa .fa-star {
+  opacity: .8;
+}
+
+.product__rate > .fa-star:hover {
+  color: #ffff00;
+}
+
+.product__btn {
+  background: transparent;
+  width: 70px;
+  height: 35px;
+  font-size: 16px;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+.fa-chevron-down {
+  font-weight: 300;
+}
+.add {
+  height: 40px;
+  width: 185px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.slider__buttons {
+  margin: 40px 0px 20px 180px;
+}
+
+.slider__btn {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  margin: 4px;
+}
+
+.slider__btn:hover {
+  width: 16px;
+  height: 16px;
+ border: 2px solid #fff;
+}
+.darkblue { background: #1f273f; }
+.red { background: #ed3333; }
+.blue { background: #29e3ea; }
