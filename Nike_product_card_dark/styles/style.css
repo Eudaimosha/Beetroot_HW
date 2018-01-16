@@ -52,10 +52,6 @@ body {
 }
 
 .fa.fa-star:hover:before {
-  color: red;
-}
-
-.product__rate > .fa-star:hover {
   color: #ffff00;
 }
 
@@ -69,17 +65,14 @@ body {
 }
 
 .product__btn:hover {
-  color: red;
-  border-color: red;
+  color: #ff0000;
+  border-color: #ff0000;
 }
 
 .product__btn:hover > .fa-chevron-down:before {
-  color: red;
+  color: #ff0000;
 }
 
-.fa-chevron-down {
-  font-weight: 300;
-}
 .add {
   height: 40px;
   width: 185px;
