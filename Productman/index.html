@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Productman</title>
   <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
@@ -25,22 +24,96 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div class="slider">
-      <div class="slider__wrapper">
-        <p class="slider__title">BLACK& WHITE</p>
-        <p class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam</p>
-        <button class="slider__button">View Project</button>
+  <section class="slider">
+    <div class="slider__slide">
+      <div class="text-wrapper">
+        <p class="slide__title">BLACK& WHITE</p>
+        <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam</p>
+        <button class="slide__button">View Project</button>
       </div>
-      <img class="slider__photo" src="./images/headphones.png" alt="headphones">
+      <img class="slide__photo" src="./images/headphones.png" alt="headphones">
     </div>
-  </main>
-  <footer>
-    <button class="footer__button"></button>
-    <button class="footer__button"></button>
-    <button class="footer__button"></button>
+    <div class="slider__pagination">
+      <button class="pagination__btn pagination__btn--active"></button>
+      <button class="pagination__btn"></button>
+      <button class="pagination__btn"></button>
+    </div>
+  </section>
+  <section class="product">
+    <p class="product__title">Featured Product</p>
+    <img class="product__decoration" src="./images/decoration.png" alt="decoration">
+    <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="product__gallery gallery">
+      <div class="gallery__item">
+        <img src="./images/speaker.png" alt="speaker">
+        <div class="gallery__item-overlay overlay">
+          <div>
+            <p class="overlay__title">Minimal Product Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./images/red-headphones.png" alt="headphones">
+        <div class="gallery__item-overlay overlay">
+          <div>
+            <p class="overlay__title">Minimal Product Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./images/fitness-bracelet.png" alt="fitness-bracelet">
+        <div class="gallery__item-overlay overlay">
+          <div>
+            <p class="overlay__title">Minimal Product Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./images/shoe.png" alt="shoe">
+        <div class="gallery__item-overlay overlay">
+          <div>
+            <p class="overlay__title">Minimal Product Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__item">
+        <img src="./images/chair.png" alt="chair">
+        <div class="gallery__item-overlay overlay">
+          <div>
+            <p class="overlay__title">Minimal Product Design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="news">
+    <p class="news__title">PRODUCTMAN NEWS</p>
+    <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="news__submit">
+      <input class="news__input" type="text" placeholder="Enter your email address">
+        <i class="fa fa-envelope-o icon__mail" ria-hidden="true"></i>
+      <button class="submit__btn" type="submit">subscribe <i class="fa fa-caret-right" aria-hidden="true"></i> </button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__social">
+      <a href="#" class="social__link">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="social__link">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="social__link">
+        <i class="fa fa-youtube" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="social__link">
+        <i class="fa fa-medium" aria-hidden="true"></i>
+      </a>
+      </div>
+      <div class="footer__text">
+        <p>© Copyright <span class="footer__text--black">Your Company</span> ltd 2016. All Rights Reserved.</p>
+      </div>
   </footer>
 </body>
-
 </html>

@@ -5,3 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+img {
+  display: block;
+}
