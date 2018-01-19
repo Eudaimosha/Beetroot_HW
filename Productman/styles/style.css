@@ -6,12 +6,17 @@ body {
   background-color: #eee;
 }
 
+.header__wrapper, .slider__wrapper, .product__wrapper, .news__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: 'Roboto', sans-serif;
-  margin: 20px 100px;
+  
 }
 
 .nav__link {
@@ -38,27 +43,29 @@ body {
 
 .slider__slide {
   display: flex;
-  flex-direction: row;
+  width: 100%;
   text-align: right;
-  margin: 100px;
+  margin: 120px 0 90px 0;
+  padding-right: 100px;
 }
 
 .text__wrapper {
-  width: 50%;
+  max-width: 575px;
 }
 
 .slide__title {
   font-family: 'Raleway Black';
   font-size: 150px;
+  letter-spacing: 10px;
   line-height: 1;
 }
 
 .slide__text {
   font-family: 'Roboto Light';
-  padding-left: 20%;
   text-align: right;
   font-size: 24px;
   line-height: 1.5;
+  padding-left: 50px;
 }
 
 .slide__button {
@@ -76,16 +83,12 @@ body {
 }
 
 .slide__photo {
-  margin: auto;
+  width: 50%;
+  maw-height: 500px;
   padding-left: 50px;
 }
 
 .slider__pagination {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,11 +108,9 @@ body {
   border: 1px solid #e10011;
 }
 
-.product {
-  width: 80%;
+.product__wrapper {
   background-color: #fff;
-  margin: auto;
-  margin-top: 150px;
+  margin-top: 90px;
 }
 
 .product__title, .news__title {
@@ -132,7 +133,7 @@ body {
   font-family: 'Raleway Regular';
   font-size: 18px;
   line-height: 24px;
-  width: 555px;
+  max-width: 555px;
   margin: 0 auto;
   text-align: center;
   justify-content: center;
@@ -208,7 +209,8 @@ body {
 }
 
 .news__submit {
-width: 700px;
+display: flex;
+max-width: 700px;
 height: 70px;
 border-radius: 100px;
 background-color: #fff;
@@ -230,13 +232,12 @@ font-weight: 600;
 
 .icon__mail {
   position: absolute;
+  transform: translateY(-50%);
   left: 35px;
-  top: 26px;
+  top: 50%;
 }
 
 .submit__btn {
-  position: absolute;
-  right:0;
   width:200px;
   height:100%;
   border: none;

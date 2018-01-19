@@ -14,7 +14,9 @@
 <body>
   <header>
     <div class="header__wrapper">
-      <div class="header__logo"><img src="./images/logo.png" alt="logo"></div>
+      <div class="header__logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
       <nav class="header__nav nav">
         <a class="nav__link" href="#recent">Recent Work</a>
         <a class="nav__link" href="#featured">Featured Product</a>
@@ -25,75 +27,87 @@
     </div>
   </header>
   <section class="slider">
-    <div class="slider__slide">
-      <div class="text-wrapper">
-        <p class="slide__title">BLACK& WHITE</p>
-        <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam</p>
-        <button class="slide__button">View Project</button>
+    <div class="slider__wrapper">
+      <div class="slider__slide">
+        <div class="text-wrapper">
+          <p class="slide__title">BLACK& WHITE</p>
+          <p class="slide__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam</p>
+          <button class="slide__button">View Project</button>
+        </div>
+        <img class="slide__photo" src="./images/headphones.png" alt="headphones">
       </div>
-      <img class="slide__photo" src="./images/headphones.png" alt="headphones">
-    </div>
-    <div class="slider__pagination">
-      <button class="pagination__btn pagination__btn--active"></button>
-      <button class="pagination__btn"></button>
-      <button class="pagination__btn"></button>
+      <div class="slider__pagination">
+        <button class="pagination__btn pagination__btn--active"></button>
+        <button class="pagination__btn"></button>
+        <button class="pagination__btn"></button>
+      </div>
     </div>
   </section>
   <section class="product">
-    <p class="product__title">Featured Product</p>
-    <img class="product__decoration" src="./images/decoration.png" alt="decoration">
-    <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class="product__gallery gallery">
-      <div class="gallery__item">
-        <img src="./images/speaker.png" alt="speaker">
-        <div class="gallery__item-overlay overlay">
-          <div>
-            <p class="overlay__title">Minimal Product Design</p>
+    <div class="product__wrapper">
+      <p class="product__title">Featured Product</p>
+      <img class="product__decoration" src="./images/decoration.png" alt="decoration">
+      <p class="product__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
+      </p>
+      <div class="product__gallery gallery">
+        <div class="gallery__item">
+          <img src="./images/speaker.png" alt="speaker">
+          <div class="gallery__item-overlay overlay">
+            <div>
+              <p class="overlay__title">Minimal Product Design</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gallery__item">
-        <img src="./images/red-headphones.png" alt="headphones">
-        <div class="gallery__item-overlay overlay">
-          <div>
-            <p class="overlay__title">Minimal Product Design</p>
+        <div class="gallery__item">
+          <img src="./images/red-headphones.png" alt="headphones">
+          <div class="gallery__item-overlay overlay">
+            <div>
+              <p class="overlay__title">Minimal Product Design</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gallery__item">
-        <img src="./images/fitness-bracelet.png" alt="fitness-bracelet">
-        <div class="gallery__item-overlay overlay">
-          <div>
-            <p class="overlay__title">Minimal Product Design</p>
+        <div class="gallery__item">
+          <img src="./images/fitness-bracelet.png" alt="fitness-bracelet">
+          <div class="gallery__item-overlay overlay">
+            <div>
+              <p class="overlay__title">Minimal Product Design</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gallery__item">
-        <img src="./images/shoe.png" alt="shoe">
-        <div class="gallery__item-overlay overlay">
-          <div>
-            <p class="overlay__title">Minimal Product Design</p>
+        <div class="gallery__item">
+          <img src="./images/shoe.png" alt="shoe">
+          <div class="gallery__item-overlay overlay">
+            <div>
+              <p class="overlay__title">Minimal Product Design</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="gallery__item">
-        <img src="./images/chair.png" alt="chair">
-        <div class="gallery__item-overlay overlay">
-          <div>
-            <p class="overlay__title">Minimal Product Design</p>
+        <div class="gallery__item">
+          <img src="./images/chair.png" alt="chair">
+          <div class="gallery__item-overlay overlay">
+            <div>
+              <p class="overlay__title">Minimal Product Design</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section class="news">
-    <p class="news__title">PRODUCTMAN NEWS</p>
-    <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class="news__submit">
-      <input class="news__input" type="text" placeholder="Enter your email address">
+    <div class="news__wrapper">
+      <p class="news__title">PRODUCTMAN NEWS</p>
+      <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua.
+      </p>
+      <div class="news__submit">
+        <input class="news__input" type="text" placeholder="Enter your email address">
         <i class="fa fa-envelope-o icon__mail" ria-hidden="true"></i>
-      <button class="submit__btn" type="submit">subscribe <i class="fa fa-caret-right" aria-hidden="true"></i> </button>
+        <button class="submit__btn" type="submit">subscribe
+          <i class="fa fa-caret-right" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </section>
   <footer class="footer">
@@ -110,10 +124,12 @@
       <a href="#" class="social__link">
         <i class="fa fa-medium" aria-hidden="true"></i>
       </a>
-      </div>
-      <div class="footer__text">
-        <p>© Copyright <span class="footer__text--black">Your Company</span> ltd 2016. All Rights Reserved.</p>
-      </div>
+    </div>
+    <div class="footer__text">
+      <p>© Copyright
+        <span class="footer__text--black">Your Company</span> ltd 2016. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
+
 </html>
