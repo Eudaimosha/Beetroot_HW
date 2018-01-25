@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="" />
   <link rel="icon" href="./images/favicon.png" />
-  <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
+  <link href="./styles/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/reset.css" />
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
@@ -16,49 +16,48 @@
 <body>
   <header>
     <section class="header">
-      <img class="header__logo" src="./images/logo.png" alt="logo">
-      <h1 class="header__title">i love design</h1>
-      <div class="header__subtitle">
-        <p>I'm glad that you visited my site where he can get to</p>
-        <p>know me and my work.</p>
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <img src="./images/logo.png" alt="logo">
+        </div>
+        <h1 class="header__title">i love design</h1>
+        <div class="header__subtitle">
+          <p>I'm glad that you visited my site where he can get to know me and my work.</p>
+        </div>
+        <button class="header__icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </button>
       </div>
-      <button class="header__icon"><i class="fa fa-angle-down" aria-hidden="true"></i></button>
     </section>
   </header>
   <main>
     <section class="content">
-      <div class="preview">
-        <div class="preview__paragraph">
-          <p>My name is Vlad Musienko, I'm a web designer. I love to draw</p>
-          <p>and all that is connected with the design. In this area a long time</p>
-          <p>ago and during this time I managed to create several successful</p>
-          <p>projects used by people all over the world.</p>
-        </div>
-        <div class="preview__paragraph">
-          <p>I love the simplicity in the design of web sites. As I see it,people,</p>
-          <p>it's like my work. Naturally do not want to rest on our laurels and</p>
-          <p>will continue further studies to improve soybean skills, creating</p>
-          <p>new interesting creative projects.</p>
-        </div>
-      </div>
-      <div class="title">
-        <p>what i do</p>
-      </div>
-      <div class="list">
-        <div class="list__item">
-          <span class="list__name">template.</span>
-          <p>Lately, I often create templates for WordPress. The portfolio is the presentation and the opportunity to buy them
-            on the site Themeforest.</p>
-        </div>
-        <div class="list__item">
-          <span span class="list__name">brand.</span>
-          <p>Creating a brand is a very complex process aimed at the creation and positioning the unique persons of the company,
-            its products and services.</p>
-        </div>
-        <div class="list__item">
-          <span class="list__name">dreams.</span>
-          <p>Everyone is able to destroy the dream, but not everyone is able to create it. I try to help people in its definition
-            as a person and specialist.</p>
+      <div class="content__wrapper">
+        <p class="content__about">
+          My name is Vlad Musienko, I'm a web designer. I love to draw and all that is connected with the design. In this area a long
+          time ago and during this time I managed to create several successful projects used by people all over the world.
+        </p>
+        <p class="content__about">
+          I love the simplicity in the design of web sites. As I see it,people, it's like my work. Naturally do not want to rest on
+          our laurels and will continue further studies to improve soybean skills, creating new interesting creative projects.
+        </p>
+        <p class="content__title">what i do</p>
+        <div class="content__list list">
+          <div class="list__item">
+            <span class="list__name">template.</span>
+            <p>Lately, I often create templates for WordPress. The portfolio is the presentation and the opportunity to buy
+              them on the site Themeforest.</p>
+          </div>
+          <div class="list__item">
+            <span span class="list__name">brand.</span>
+            <p>Creating a brand is a very complex process aimed at the creation and positioning the unique persons of the company,
+              its products and services.</p>
+          </div>
+          <div class="list__item">
+            <span class="list__name">dreams.</span>
+            <p>Everyone is able to destroy the dream, but not everyone is able to create it. I try to help people in its definition
+              as a person and specialist.</p>
+          </div>
         </div>
       </div>
     </section>
