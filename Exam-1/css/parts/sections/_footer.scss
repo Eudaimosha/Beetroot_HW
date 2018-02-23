@@ -11,7 +11,7 @@
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
-  }
+  }    
   &__title {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -61,29 +61,45 @@
     &:hover {
       background-color: $gray;
     }
+    &:focus {
+      outline: none;
+    }
   }
 }
 
-.input {
+.form {
   max-width: 670px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   background: transparent;
+  overflow: hidden;
   &__field {
-    @include placeholder($gray, 1, 18px, italic);
-    color: $white;
     width: calc((100% - 60px) / 2);
     height: 50px;
     background: transparent;
     border: none;
     border-bottom: 1px solid #fff;
     padding: 10px 0 10px 20px;
+    &--input {
+      @include placeholder($gray, 1, 18px, italic);
+      background: transparent;
+      border: none;
+      color: $white;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      &:focus {
+        outline: none;
+      }
+    outline: none;
+    }
     &--message {
-    margin-top: 100px;
-    width: 100%;
+      margin-top: 100px;
+      width: 100%;
     }
   }
 
