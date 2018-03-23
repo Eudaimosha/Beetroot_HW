@@ -84,7 +84,7 @@ $('.filter-button-group').on('click', 'button', function () {
 
 // 1st slider
   $( function(){
-    $('.slider').slick({
+    $('.team__slider').slick({
       dots: true,
       arrows: false,
       infinite: true,
@@ -99,7 +99,8 @@ $('.filter-button-group').on('click', 'button', function () {
     $('.testimonials__slider').slick({
       autoplay: true,
       autoplaySpeed: 4000,
-      dots: false,
+      dots: true,
+      arrows: false,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
