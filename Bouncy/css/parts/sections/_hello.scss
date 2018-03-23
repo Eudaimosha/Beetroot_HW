@@ -37,38 +37,33 @@
     }
   }
   &__btn {
-    button {
-      border: 1px solid $white;
-      background: none;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
+    border: 1px solid $white;
+    background: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: $white;
+    opacity: 0.6;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-top:1px solid $white ;
+      border-left:1px solid $white ;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%) rotate(-135deg);
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    &:hover {
+      background-color: $aqua;
+      border-color: $aqua;
       color: $white;
-      opacity: 0.6;
-      position: relative;
-      &:before {
-        content: '';
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border-top:1px solid $white ;
-        border-left:1px solid $white ;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -70%) rotate(-135deg);
-      }
-      i {
-        font-size: 16px;
-      }
-      @media (max-width: 767px) {
-        margin-bottom: 20px;
-      }
-      &:hover {
-        background-color: $aqua;
-        border-color: $aqua;
-        color: $white;
-        opacity: 1;
-      }
+      opacity: 1;
     }
   }
 }

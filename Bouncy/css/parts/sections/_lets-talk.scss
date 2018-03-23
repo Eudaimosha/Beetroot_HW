@@ -13,16 +13,15 @@
     font-size: 20px;
     color: $white;
     line-height: 1.25;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   &__btn {
     font-size: 16px;
-    line-height: 12px;
     width: 148px;
-    height: 40px;
     border: 2px solid $white;
-    border-radius: 20px;
+    border-radius: 30px;
     color: $white;
+    padding: 10px 28px;
     &:hover {
       border-color: $aqua;
       color: $aqua;
