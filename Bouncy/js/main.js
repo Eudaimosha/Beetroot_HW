@@ -79,10 +79,15 @@ $('.filter-button-group').on('click', 'button', function () {
   "use strict";
 
 // simple-scroll
-  var el = document.querySelector('.item__text');
+  var el = document.querySelector('.slider1');
   SimpleScrollbar.initEl(el);
 
-// 1st slider
+  var el = document.querySelector('.slider2');
+  SimpleScrollbar.initEl(el);
+
+  var el = document.querySelector('.slider3');
+  SimpleScrollbar.initEl(el);
+
   $( function(){
     $('.team__slider').slick({
       dots: true,
