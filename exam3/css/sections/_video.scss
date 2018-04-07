@@ -1,0 +1,59 @@
+.video {
+  width: 100%;
+  min-height: 1100px;
+  background: url('./../img/2bg.png') no-repeat center;
+  background-size: cover;
+  position: relative;
+  &__text {
+    font-family: 'Gilroy Extra Bold';
+    display: flex;
+    min-height: 500px;
+    flex-direction: column;
+    padding-top: 250px;
+    &--small {
+    color: $white;
+    letter-spacing: 7px;
+    line-height: 1;
+    font-size: 64px;
+    text-transform: uppercase;
+    }
+  }
+  &__text--huge {
+    font-size: 161px;
+    line-height: 1;
+    background: linear-gradient($lightblue, $brightblue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+  }
+  &__text--subtitle {
+    width: 280px;
+    color: $white;
+    font-size: 16px;
+    font-family: 'Gilroy Light';
+    margin-left: 20px;
+    
+    & span {
+      font-family: 'Gilroy Extra Bold';
+    }
+  }
+  &__btn {
+    box-shadow:  0 0 80px 80px rgba(44, 57, 142, 0.5);
+    border-radius: 50%;
+    background-color: rgba(44, 57, 142, 0.5);
+    position: absolute;
+    left: 34%;
+    bottom: 35%;
+    z-index: 2;
+    &:hover {
+      box-shadow:  0 0 80px 80px rgba(245, 4, 36, 0.5);
+      background-color: rgba(245, 4, 36, 0.5);
+    }
+    & button {
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.benefits {
+  width: 100%;
+  min-height: 850px;
+  background: url('./../img/3bg.png') no-repeat center;
+  background-size: cover;
+  position: relative;
+  &__banner {
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    z-index: 5;
+    left: 40%;
+    top: -15%;
+  }
+  &__coaches {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    z-index: 2;
+    left: 68%;
+    top: 10%;
+  }
+  &__gym {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    z-index: 2;
+    left: 22%;
+    top: 48%;
+  }
+  &__slogan {
+    width: 160px;
+    height: auto;
+    color: $white;
+    font-size: 19px;
+    font-family: 'Gilroy Extra Bold';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow:  0 0 50px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    &--coaches {
+      position: absolute;
+      z-index: 8;
+      top: 35%;
+      right: 13%;
+    }
+    &--gym {
+      position: absolute;
+      z-index: 8;
+      bottom: 18%;
+      left: 26%;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    z-index: 10;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    & input {
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid;
+      color: $white;
+      font-size: 18px;
+      font-family: 'Gilroy Light';
+      height: 50px;
+      width: 400px;
+      overflow: hidden;
+      outline: none;
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        color: $white;
+        font-size: 18px;
+        font-family: 'Gilroy Light';
+       } 
+      &::-moz-placeholder {
+        color: $white;
+        font-size: 18px;
+        font-family: 'Gilroy Light';
+       }
+    }
+    & .name {
+      border-color: $blue;
+    }
+    & .email {
+      border-color: $purple;
+    }
+  }
+  &__button {
+    width: 400px;
+    height: 90px;
+    box-shadow:  0 0 50px 50px rgba(44, 57, 142, 0.3);
+    border-radius: 40px;
+    background: linear-gradient(#3b2fc0, #1b99ff);
+    -webkit-background-clip: button;
+    color: transparent; 
+    margin-top: 47px;
+    border-radius: 40px;
+    color: $white;
+    font-family: 'Gilroy Extra Bold';
+    font-size: 30px;
+    &:hover {
+      background: linear-gradient(#f03f13, #ee3a70);
+    }
+  }
+}
+
+.name__benefits {
+  width: 400px;
+  margin: 0;
+}
