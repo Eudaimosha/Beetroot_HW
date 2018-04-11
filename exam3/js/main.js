@@ -1,85 +1,70 @@
 $(document).ready(function () {
 
-  // add active class to clicked nav item
-  $(".header__menu a").click(function (event) {
-    event.preventDefault();
-    $(".header__menu a").removeClass('active');
-    $(this).addClass('active');
+  // button back to top
+  if ($("#button__page-up").length) {
+    let scrollTrigger = 300; // px
+    let backToTop = function () {
+      let scrollTop = $(window).scrollTop();
+      if (scrollTop > scrollTrigger) {
+        $("#button__page-up").addClass("is-visible");
+      } else {
+        $("#button__page-up").removeClass("is-visible");
+      }
+    };
+    backToTop();
+    $(window).scroll(function () { backToTop(); });
+    $("#button__page-up").click(function (e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+          }, 700
+        );
+      }
+    );
+  }
+
+
+  // open modal
+  $(".video__btn--open-modal").click(function() {
+    $('#modal').addClass('modal--show');
+    $('body').addClass('hidden');
   });
 
 
-  // Slow scroll from nav item to current section
-  $(".header__menu a, .hello__btn, .lets-talk__btn").click(function (event) {
-    event.preventDefault();
-    let id = $(this).attr("href");
-    let top = $(id).offset().top;
-    let headerHeight = $('.header').height();
-    let isHeaderSticky = $('.header').hasClass('header--sticky');
-    let scrollTop = isHeaderSticky ? top - headerHeight : top - headerHeight + 50;
-    $("body, html").animate({ scrollTop }, 700);
-  }
-  );
-});
-
-// sticky header
-if ($('.header').length) {
-  let renderHeader = function () {
-      const HEADER = $('.header');
-      let headerHeight = HEADER.height();
-      let scrollTop = $(window).scrollTop();
-      if (scrollTop > headerHeight) {
-          HEADER.addClass("header--sticky");
-      } else {
-          HEADER.removeClass("header--sticky");
-      }
-  }
-  renderHeader();
-  $(window).scroll(function () {
-      renderHeader();
-  })
-}
-
- // Removes focus-effect under the "All works" button after clicking another filter-buttons
- $(".filter-button").click(function (event) {
-  $(".all-button").removeClass('is-checked');
-});
-
-//adds underlining under filter-buttons after the click
-$(".filter-button").click(function (event) {
-  event.preventDefault();
-    $(".filter-button").removeClass('focus');
-    $(this).addClass('focus');
-});
+  // close modal
+  $('.modal__btn--close').click(function() {
+    $('#modal').removeClass('modal--show');
+    $('body').removeClass('hidden');
+  });
 
 
+  // close modal by clicking outside of modal content
+  $(document).click(function (event) {
+    if (!$(event.target).closest(".modal__wrapper, .video__btn--open-modal").length) {
+      $("#modal").removeClass("modal--show");
+      $('body').removeClass('hidden');
+    }
+  });
 
-
-//Functions for team and testimonials slider
-;(function($){
-  "use strict";
-
-  $( function(){
-    $('.testimonials__slider').slick({
+  // slick-slider
+  $('.testimonials__slider').slick({
       dots: true,
-      arrows: true,
-      infinite: true,
       speed: 300,
       slidesToShow: 1,
-      fade: true
-    });
-  })
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      nextArrow: '<button type="button" class="slick-next"><p>вправо</p></button>',
+      prevArrow: '<button type="button" class="slick-prev"> <p>вліво</p></button>',
+  });
 
-// 2st slider
-  // $( function(){
-  //   $('.testimonials__slider').slick({
-  //     autoplay: true,
-  //     autoplaySpeed: 4000,
-  //     dots: true,
-  //     arrows: false,
-  //     infinite: true,
-  //     speed: 300,
-  //     slidesToShow: 1,
-  //     fade: true
-  //   });
-  // })
-})(jQuery);
+  $('.contacts__slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+});
+
+});

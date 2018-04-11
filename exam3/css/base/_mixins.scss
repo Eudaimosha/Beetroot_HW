@@ -1,0 +1,8 @@
+$dots-url: '../images/slider-dots.png';
+.slick-dots {
+  bottom: 10px;
+  li button::before,
+  li.slick-active button::before {
+    opacity: 1;
+  }
+}

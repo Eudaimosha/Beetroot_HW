@@ -7,8 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NO.</title>
   <link rel="shortcut icon" href="./img/logo.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="./slick-1.8.0/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="./slick-1.8.0/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+  <!-- <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/> -->
+  <link rel="stylesheet" type="text/css" href="./css/fonts/ionicons.min.css">
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -60,7 +61,7 @@
         <p class="video__text--subtitle">Дивись 2 хвилини, як ми працюємо і обирай <span>безкоштовний план</span></p>
       </div>
       <div class="video__btn">
-        <button><img src="./img/play.png"/></button>
+        <button class="video__btn--open-modal"><img src="./img/play.png"/></button>
       </div>
     </div>
   </section>
@@ -128,8 +129,92 @@
     </div>
   </section>
   <section class="contacts">
-    <div class="contacts__wrapper wrapper"></div>
+    <div class="contacts__wrapper wrapper">
+      <div class="contacts__main-btn main-btn">
+        <button class="main-btn__button">Іду тренуватись</button>
+        <p class="main-btn__text">Я ж не гірший за них</p>
+      </div>
+      <div class="contacts__main-content">
+        <div class="contacts__title">
+          <p class="contacts__title--small">ми тут</p>
+          <p class="contacts__title--huge">приходь</p>
+        </div>
+        <div class="contacts__container">
+          <div class="contacts__slider">
+            <div class="address-slide">
+              <div class="address-slide__wrapper">
+                <div class="address-slide__logo"><img src="./img/logo.png" alt="logo"></div>
+                <p class="address-slide__subtitle">тренажерний зал</p>
+                <p class="address-slide__location">м. Лівів, площа Ринок 8</p>
+                <p class="address-slide__phone-number">066 156 61 00</p>
+                <p class="address-slide__manager">спитати Катю</p>
+              </div>
+            </div>
+            <div class="address-slide">
+              <div class="address-slide__wrapper">
+                <div class="address-slide__logo"><img src="./img/logo.png" alt="logo"></div>
+                <p class="address-slide__subtitle">тренажерний зал</p>
+                <p class="address-slide__location">м. Київ, бульвар Лесі Українки 26</p>
+                <p class="address-slide__phone-number">093 991 50 60</p>
+                <p class="address-slide__manager">спитати Олю</p>
+              </div>
+            </div>
+            <div class="address-slide">
+              <div class="address-slide__wrapper">
+                <div class="address-slide__logo"><img src="./img/logo.png" alt="logo"></div>
+                <p class="address-slide__subtitle">тренажерний зал</p>
+                <p class="address-slide__location">м. Одеса, вулиця Базарна 63</p>
+                <p class="address-slide__phone-number">063 246 25 37</p>
+                <p class="address-slide__manager">спитати Христю</p>
+              </div>
+            </div>
+          </div>
+          <form class="contacts__form">
+            <input class="name" type="text" placeholder="Ксюха" />
+            <input class="email" type="text" placeholder="aimtoadmire@gmail.com" />
+            <button class="form-button">Тренуватись безкоштовно</button>
+          </form>
+        </div>
+        <div class="contacts__socials">
+          <a href="#">
+            <div>
+              <i class="ion-social-facebook-outline"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="ion-social-instagram-outline"></i>
+            </div>
+          </a>
+          <a href="#">
+            <div>
+              <i class="ion-social-twitter-outline"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
+  
+  <button id="button__page-up" class="button__page-up">
+    <i class="ion-ios-body"></i>
+  </button>
+  <div id="modal" class="modal">
+    <div class="modal__container">
+      <div class="modal__wrapper">
+        <div class="modal__header">
+          <p class="modal__title">Готуй тіло взимку, щоб не було соромно влітку!</p>
+          <button class="modal__btn--close">&times</button>
+        </div>
+        <div class="modal__body">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_UBOxUl0Sl4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="modal__footer">
+          <button class="modal__btn--submit">Ай, молодець!</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/jquery-3.3.1.min.js"></script>
   <script src="./js/slick.min.js"></script>
