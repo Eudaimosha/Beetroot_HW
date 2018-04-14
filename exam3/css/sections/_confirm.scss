@@ -21,6 +21,9 @@
     &:hover {
       background: linear-gradient($lightblue, $brightblue);
     }
+    @media (max-width: 1239px) {
+      right: 0;
+    }
   }
   &__text {
     color: $white;

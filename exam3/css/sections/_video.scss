@@ -1,7 +1,7 @@
 .video { 
   width: 100%;
   min-height: 1100px;
-  background: url('./../img/2bg.png') no-repeat center;
+  background: url('./../img/2bg.png') no-repeat 0 0;
   background-size: cover;
   position: relative;
   &__text {
@@ -26,6 +26,9 @@
     background-clip: text;
     color: transparent;
     text-transform: uppercase;
+    @media (max-width: 1239px) {
+      font-size: 120px;
+    }
   }
   &__text--subtitle {
     width: 280px;
@@ -43,7 +46,7 @@
     border-radius: 50%;
     background-color: rgba(44, 57, 142, 0.5);
     position: absolute;
-    left: 33%;
+    left: 38%;
     bottom: 35%;
     z-index: 2;
     &:hover {
@@ -54,6 +57,13 @@
       &:hover {
         opacity: 0.5;
       }
+    }
+    @media (max-width: 1239px) {
+      border: 10px solid $blue;
+      padding: 100px;
+      left: 35%;
+      bottom: 30%;
+      border-radius: 50%;
     }
   }
 }

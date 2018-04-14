@@ -198,7 +198,7 @@ img {
   font-size: 18px;
   font-family: 'Gilroy Light';
   height: 50px;
-  margin-left: 100px;
+  width: 400px;
   overflow: hidden;
   outline: none;
 }
@@ -220,12 +220,10 @@ img {
 }
 
 .content__form .name {
-  width: 290px;
   border-color: #5327ff;
 }
 
 .content__form .email {
-  width: 265px;
   border-color: #4922df;
 }
 
@@ -251,7 +249,7 @@ img {
 .video {
   width: 100%;
   min-height: 1100px;
-  background: url("./../img/2bg.png") no-repeat center;
+  background: url("./../img/2bg.png") no-repeat 0 0;
   background-size: cover;
   position: relative;
 }
@@ -282,6 +280,12 @@ img {
   text-transform: uppercase;
 }
 
+@media (max-width: 1239px) {
+  .video__text--huge {
+    font-size: 120px;
+  }
+}
+
 .video__text--subtitle {
   width: 280px;
   color: #fff;
@@ -299,7 +303,7 @@ img {
   border-radius: 50%;
   background-color: rgba(44, 57, 142, 0.5);
   position: absolute;
-  left: 33%;
+  left: 38%;
   bottom: 35%;
   z-index: 2;
 }
@@ -311,6 +315,16 @@ img {
 
 .video__btn button:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 1239px) {
+  .video__btn {
+    border: 10px solid #5327ff;
+    padding: 100px;
+    left: 35%;
+    bottom: 30%;
+    border-radius: 50%;
+  }
 }
 
 .button__page-up {
@@ -436,7 +450,7 @@ img {
 .benefits {
   width: 100%;
   min-height: 850px;
-  background: url("./../img/3bg.png") no-repeat center;
+  background: url("./../img/3bg.png") no-repeat 0 0;
   background-size: cover;
   position: relative;
 }
@@ -450,6 +464,14 @@ img {
   top: -15%;
 }
 
+@media (max-width: 1239px) {
+  .benefits__banner {
+    width: 300px;
+    height: 300px;
+    left: 0;
+  }
+}
+
 .benefits__coaches {
   width: 290px;
   height: 290px;
@@ -459,6 +481,14 @@ img {
   top: 10%;
 }
 
+@media (max-width: 1239px) {
+  .benefits__coaches {
+    width: 200px;
+    height: 200px;
+    left: 50%;
+  }
+}
+
 .benefits__gym {
   width: 290px;
   height: 290px;
@@ -466,6 +496,15 @@ img {
   z-index: 2;
   left: 22%;
   top: 48%;
+}
+
+@media (max-width: 1239px) {
+  .benefits__gym {
+    width: 200px;
+    height: 200px;
+    right: 50%;
+    top: 30%;
+  }
 }
 
 .benefits__slogan {
@@ -485,15 +524,15 @@ img {
 .benefits__slogan--coaches {
   position: absolute;
   z-index: 8;
-  top: 35%;
-  right: 13%;
+  bottom: 0;
+  right: 15%;
 }
 
 .benefits__slogan--gym {
   position: absolute;
   z-index: 8;
-  bottom: 18%;
-  left: 26%;
+  bottom: 0;
+  left: 15%;
 }
 
 .benefits__content {
@@ -703,6 +742,12 @@ img {
   background: linear-gradient(#3b2fc0, #1b99ff);
 }
 
+@media (max-width: 1239px) {
+  .confirm__button {
+    right: 0;
+  }
+}
+
 .confirm__text {
   color: #fff;
   font-family: 'Gilroy Light';
@@ -723,7 +768,7 @@ img {
 
 .contacts {
   width: 100%;
-  height: 960px;
+  min-height: 960px;
   background: url("./../img/5bgr.png") no-repeat center;
   background-size: cover;
   display: flex;
@@ -738,6 +783,12 @@ img {
   left: 10%;
 }
 
+@media (max-width: 1239px) {
+  .contacts__man {
+    left: 0;
+  }
+}
+
 .contacts__container {
   display: flex;
   flex-wrap: wrap;
@@ -746,6 +797,13 @@ img {
   margin-top: 160px;
   min-height: 800px;
   width: 100%;
+}
+
+@media (max-width: 1239px) {
+  .contacts__container {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .contacts__title {
@@ -777,6 +835,12 @@ img {
   height: auto;
   padding-left: 120px;
   z-index: 15;
+}
+
+@media (max-width: 1239px) {
+  .contacts__address {
+    margin-bottom: 50px;
+  }
 }
 
 .contacts__form {

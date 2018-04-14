@@ -104,7 +104,7 @@
       font-size: 18px;
       font-family: 'Gilroy Light';
       height: 50px;
-      margin-left: 100px;
+      width: 400px;
       overflow: hidden;
       outline: none;
       &:focus {
@@ -122,11 +122,9 @@
        }
     }
     & .name {
-      width: 290px;
       border-color: $blue;
     }
     & .email {
-      width: 265px;
       border-color: $purple;
     }
   }
