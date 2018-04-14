@@ -57,14 +57,4 @@ $(document).ready(function () {
       prevArrow: '<button type="button" class="slick-prev"> <p>вліво</p></button>',
   });
 
-  $('.contacts__slider').slick({
-    dots: true,
-    arrows: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-});
-
 });
