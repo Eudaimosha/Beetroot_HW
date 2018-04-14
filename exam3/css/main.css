@@ -83,9 +83,10 @@ img {
 
 .preview {
   width: 100%;
-  min-height: 845px;
-  background: url("./../img/1bg.png") no-repeat center;
+  min-height: 100vh;
+  background: url("./../img/1bg.png") no-repeat 50% 100%;
   background-size: cover;
+  z-index: 1;
 }
 
 .preview__header {
@@ -240,10 +241,11 @@ img {
   color: #fff;
   font-family: 'Gilroy Extra Bold';
   font-size: 30px;
+  z-index: 5;
 }
 
 .content__button:hover {
-  background: linear-gradient(#d61329, #aa153d);
+  background: linear-gradient(#d61329, #da2f5c);
 }
 
 .video {
@@ -297,7 +299,7 @@ img {
   border-radius: 50%;
   background-color: rgba(44, 57, 142, 0.5);
   position: absolute;
-  left: 34%;
+  left: 33%;
   bottom: 35%;
   z-index: 2;
 }
@@ -324,11 +326,12 @@ img {
   transition: all 0.3s ease-in-out;
   opacity: 0;
   pointer-events: none;
+  z-index: 20;
   cursor: pointer;
 }
 
 .button__page-up:hover {
-  background: linear-gradient(#d61329, #aa153d);
+  background: linear-gradient(#d61329, #da2f5c);
 }
 
 .button__page-up:focus {
@@ -380,7 +383,7 @@ img {
 }
 
 .modal__header {
-  background: linear-gradient(#d61329, #aa153d);
+  background: linear-gradient(#d61329, #da2f5c);
   color: #fff;
   padding: 10px 15px;
   display: flex;
@@ -417,7 +420,7 @@ img {
 .modal__btn--submit {
   padding: 0 20px;
   height: 40px;
-  background: linear-gradient(#d61329, #aa153d);
+  background: linear-gradient(#d61329, #da2f5c);
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -557,7 +560,7 @@ img {
 }
 
 .benefits__button:hover {
-  background: linear-gradient(#d61329, #aa153d);
+  background: linear-gradient(#d61329, #da2f5c);
 }
 
 .name__benefits {
@@ -605,8 +608,9 @@ img {
 }
 
 .slick-arrow {
+  max-width: 61px;
   position: absolute;
-  bottom: 50px;
+  bottom: 55px;
   text-decoration: underline;
   border: none;
   background-color: transparent;
@@ -632,54 +636,125 @@ img {
 .slick-dots {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
 }
 
 .slick-dots li {
   list-style: none;
   margin: 0 5px;
+  line-height: 1;
+}
+
+.slick-dots li button {
+  text-indent: -9999px;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
 }
 
 .slick-dots li.slick-active button {
-  background-color: transparent;
-  color: #000;
-  width: 5px;
-  height: 5px;
-  border: 1px solid #000;
-  padding: 5px;
+  position: relative;
 }
 
-.slick-dots button {
-  font-size: 0;
-  background-color: #000;
-  width: 5px;
-  height: 5px;
+.slick-dots li.slick-active button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.confirm {
+  width: 100%;
+  min-height: 265px;
+  background: linear-gradient(#d61329, #da2f5c);
+  position: relative;
+  z-index: 1;
+}
+
+.confirm__button {
+  width: 370px;
+  height: 90px;
+  background-color: #c60e2a;
+  box-shadow: 0 0 90px 30px rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  color: #fff;
+  font-family: 'Gilroy Extra Bold';
+  font-size: 30px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 15;
+  top: calc(50% - 45px);
+  right: 10%;
+}
+
+.confirm__button:hover {
+  background: linear-gradient(#3b2fc0, #1b99ff);
+}
+
+.confirm__text {
+  color: #fff;
+  font-family: 'Gilroy Light';
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.6;
+  vertical-align: right;
+  position: absolute;
+  z-index: 2;
+  top: calc(50% + 65px);
+  right: calc(10% + 85px);
+}
+
+.two-sections__wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 .contacts {
   width: 100%;
-  min-height: 1274px;
-  background: url("./../img/5bg.png") no-repeat center;
+  height: 960px;
+  background: url("./../img/5bgr.png") no-repeat center;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contacts__main-content {
+.contacts__man {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 10%;
+}
+
+.contacts__container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  min-height: 960px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 160px;
+  min-height: 800px;
   width: 100%;
 }
 
 .contacts__title {
+  width: 100%;
   font-family: 'Gilroy Extra Bold';
   text-transform: uppercase;
   margin-bottom: 60px;
+  z-index: 15;
+  text-align: right;
 }
 
 .contacts__title--huge {
@@ -697,72 +772,15 @@ img {
   letter-spacing: 7px;
 }
 
-.contacts__container {
-  display: flex;
-  min-height: 250px;
-  justify-content: space-between;
-  width: 100%;
-  margin-bottom: 90px;
-}
-
-.contacts__slider {
+.contacts__address {
   max-width: 300px;
   height: auto;
   padding-left: 120px;
-  overflow: hidden;
-}
-
-.contacts__slider .slick-dots {
-  display: flex;
-  justify-content: center;
-  transform: translateX(-50%);
-}
-
-.contacts__slider .slick-dots li {
-  list-style: none;
-  margin: 0 5px;
-}
-
-.contacts__slider .slick-dots li:first-of-type {
-  position: absolute;
-  left: -67px;
-  top: -475px;
-}
-
-.contacts__slider .slick-dots li:nth-of-type(2) {
-  position: absolute;
-  top: -513px;
-  right: -283px;
-}
-
-.contacts__slider .slick-dots li:last-of-type {
-  position: absolute;
-  top: -229px;
-  right: -304px;
-}
-
-.contacts__slider .slick-dots li.slick-active button {
-  background-color: transparent;
-  color: #fff;
-  width: 28px;
-  height: 28px;
-  border: 6px solid #fff;
-  padding: 5px;
-}
-
-.contacts__slider .slick-dots button {
-  transition: all 0.3s ease-in-out;
-  font-size: 0;
-  border: 4px solid #1b99ff;
-  background-color: transparent;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  font-family: 'slick';
-  line-height: 20px;
+  z-index: 15;
 }
 
 .contacts__form {
+  z-index: 15;
   display: flex;
   flex-direction: column;
 }
@@ -819,63 +837,63 @@ img {
 }
 
 .contacts__form .form-button:hover {
-  background: linear-gradient(#d61329, #aa153d);
+  background: linear-gradient(#d61329, #da2f5c);
 }
 
-.contacts__socials {
-  width: 120px;
+.contacts__socials ul {
+  margin: 100px auto;
+  width: 250px;
   height: 35px;
-  font-size: 30px;
-  color: #3f3f40;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 
-.contacts__socials:hover {
-  color: #1b99ff;
-}
-
-.main-btn {
-  width: 100%;
-  min-height: 265px;
+.contacts__socials ul li {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #56585a;
+  margin-right: 20px;
   position: relative;
-  z-index: 1;
+  cursor: pointer;
+  transition: all 0.5s linear;
 }
 
-.main-btn__button {
-  width: 370px;
-  height: 90px;
-  background-color: #c60e2a;
-  box-shadow: 0 0 90px 30px rgba(255, 255, 255, 0.3);
-  border-radius: 40px;
-  color: #fff;
-  font-family: 'Gilroy Extra Bold';
+.contacts__socials ul li:last-child {
+  margin-right: 0;
+}
+
+.contacts__socials ul li .ion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #56585a;
   font-size: 30px;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 2;
-  top: calc(50% - 45px);
-  right: 10%;
+  transition: all 0.5s linear;
 }
 
-.main-btn__button:hover {
-  background: linear-gradient(#3b2fc0, #1b99ff);
+.contacts__socials ul li:hover {
+  background: #1b99ff;
+  box-shadow: 0 0 30px 3px #1b99ff;
+  border-color: #1b99ff;
 }
 
-.main-btn__text {
+.contacts__socials ul li:hover .ion {
   color: #fff;
-  font-family: 'Gilroy Light';
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.6;
-  position: absolute;
-  z-index: 2;
-  top: calc(50% + 65px);
-  right: calc(10% + 85px);
 }
 
-.address-slide {
+@media screen and (max-width: 640px) {
+  .contacts__socials .wrapper ul {
+    width: 100px;
+  }
+  .contacts__socials .wrapper ul li {
+    margin-top: 20px;
+  }
+}
+
+.address {
   color: #56585a;
   font-size: 14px;
   line-height: 18px;
@@ -884,22 +902,22 @@ img {
   font-family: 'Gilroy Extra Bold';
 }
 
-.address-slide__logo {
+.address__logo {
   width: 100px;
   height: 45px;
   margin-bottom: 20px;
 }
 
-.address-slide__subtitle {
+.address__subtitle {
   margin-bottom: 40px;
 }
 
-.address-slide__location {
+.address__location {
   color: #fff;
   margin-bottom: 25px;
 }
 
-.address-slide__manager {
+.address__manager {
   color: #3f3f40;
   font-size: 12px;
 }

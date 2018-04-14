@@ -1,0 +1,37 @@
+.confirm {
+  width: 100%;
+  min-height: 265px;
+  background: linear-gradient($scarlet, $lightpink);
+  position: relative;
+  z-index: 1;
+  &__button {
+    width: 370px;
+    height: 90px;
+    background-color: $pink;
+    box-shadow:  0 0 90px 30px rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    color: $white;
+    font-family: 'Gilroy Extra Bold';
+    font-size: 30px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 15;
+    top: calc(50% - 45px); 
+    right: 10%;
+    &:hover {
+      background: linear-gradient($lightblue, $brightblue);
+    }
+  }
+  &__text {
+    color: $white;
+    font-family: 'Gilroy Light';
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.6;
+    vertical-align: right;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + 65px); 
+    right: calc(10% + 85px);
+  }
+}

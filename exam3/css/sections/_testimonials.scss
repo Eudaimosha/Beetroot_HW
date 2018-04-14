@@ -34,8 +34,9 @@
 }
 
 .slick-arrow {
+  max-width: 61px;
   position: absolute;
-  bottom: 50px;
+  bottom: 55px;
   text-decoration: underline;
   border: none;
   background-color: transparent;
@@ -57,28 +58,38 @@
 .slick-dots {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   left: 50%;
   bottom: 50px;
-  transform: translateX(-50%);
+  transform: translateX(-55%);
   li {
     list-style: none;
     margin: 0 5px;
-    &.slick-active button {
-      background-color: transparent;
-      color: $black;
-      width: 5px;
-      height: 5px;
-      border: 1px solid $black;
-      padding: 5px;
+    line-height: 1;
+    button {
+      text-indent: -9999px;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: $black;
     }
-  }
-  button {
-    font-size: 0;
-    background-color: $black;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
+    &.slick-active button {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid $black;
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }
 

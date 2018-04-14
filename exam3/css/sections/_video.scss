@@ -1,4 +1,4 @@
-.video { //overflow: hidden - чтоб после вызова модалки не скроллился сайт
+.video { 
   width: 100%;
   min-height: 1100px;
   background: url('./../img/2bg.png') no-repeat center;
@@ -43,7 +43,7 @@
     border-radius: 50%;
     background-color: rgba(44, 57, 142, 0.5);
     position: absolute;
-    left: 34%;
+    left: 33%;
     bottom: 35%;
     z-index: 2;
     &:hover {
