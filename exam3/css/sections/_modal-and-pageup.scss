@@ -6,6 +6,7 @@
   height: 50px;
   border-radius: 20px;
   background: linear-gradient($lightblue, $brightblue);
+  box-shadow: 0 0 50px rgb(23, 50, 223);
   color:$white;
   font-size: 30px;
   transition: all 0.3s ease-in-out;
@@ -17,6 +18,7 @@
 
 .button__page-up:hover {
   background: linear-gradient($scarlet, $lightpink);
+  box-shadow: 0 0 50px $white;
 }
 
 .button__page-up:focus {
@@ -59,8 +61,7 @@
 }
 
 .modal__wrapper {
-  max-width: 90%;
-  width: 590px;
+  width: 870px;
   height: auto;
   background-color: $white;
   border-radius: 5px;

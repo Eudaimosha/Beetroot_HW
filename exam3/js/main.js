@@ -23,7 +23,6 @@ $(document).ready(function () {
     );
   }
 
-
   // open modal
   $(".video__btn--open-modal").click(function() {
     $('#modal').addClass('modal--show');
@@ -50,6 +49,8 @@ $(document).ready(function () {
   $('.testimonials__slider').slick({
       dots: true,
       speed: 300,
+      autoplay: true,
+      autoplaySpeed: 6000,
       slidesToShow: 1,
       slidesToScroll: 1,
       adaptiveHeight: true,
@@ -57,4 +58,16 @@ $(document).ready(function () {
       prevArrow: '<button type="button" class="slick-prev"> <p>вліво</p></button>',
   });
 
+  $('.contacts__slider').slick({
+    dots: false,
+    arrows: false,
+    speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
 });
+});
+
+
